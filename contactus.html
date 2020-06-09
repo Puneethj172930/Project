@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            position: relative;
+            background-image: url(background-img1.jpg);
+        }
+        
+        .container {
+            width: 1000px;
+            height: 120px;
+            text-align: center;
+            position: relative;
+            margin: auto;
+            border: 5px solid black;
+            background-color: coral;
+        }
+        
+        .navigation ul {
+            position: absolute;
+            top: 72px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: brown;
+            width: 100%;
+        }
+        
+        .navigation li {
+            float: left;
+        }
+        
+        .navigation li a {
+            display: block;
+            float: left;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .navigation li a:hover {
+            background-color: burlywood;
+        }
+        
+        #container1 {
+            position: absolute;
+            top: 135px;
+            left: 500px;
+            background-color: rgba(245, 220, 220, 0.7);
+            border-radius: 5px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 5px #f7f7f7;
+            width: 600px;
+            height: 480px;
+            padding: 10px;
+        }
+        
+        input {
+            padding: 8px;
+            margin: 5px;
+            display: inline-block;
+            width: 550px;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input:focus {
+            background-color: #f1f1f1;
+        }
+        
+        #btn {
+            width: 550px;
+            background-color: #4caf50;
+            opacity: 0.7;
+            height: 40px;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        
+        #btn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Blood Bank Management System</h1>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="container1">
+        <h1 style="font-weight:bold;text-align:center;">Contact Our Support Team</h1>
+        <p style="font-weight: bold; font-size:25px;text-align:center;">We are here to help and answer any queries you might have.</p>
+
+
+
+        <form method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="phoneno">Phone No:</label><br>
+            <input type="tel" name="phoneno" id="phoneno" required><br>
+            <label for="message">Message:(Resizable)</label><br>
+            <textarea name="message"></textarea><br>
+            <button type="submit" id="btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

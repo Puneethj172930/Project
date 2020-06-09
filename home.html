@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 197px;
+            text-align: center;
+            position: relative;
+            margin: auto;
+            border: 5px solid black;
+            background-color: coral;
+        }
+        
+        .navigation ul {
+            position: absolute;
+            top: 150px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: brown;
+            width: 100%;
+        }
+        
+        .navigation li {
+            float: left;
+        }
+        
+        .navigation li a {
+            display: block;
+            float: left;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .navigation li a:hover {
+            background-color: burlywood;
+        }
+        
+        #container1 {
+            background-color: burlywood;
+            width: 800px;
+            border: 2px solid #f7f7f7;
+            position: absolute;
+            top: 250px;
+            left: 30px;
+            box-shadow: 2px 2px 4px #686868;
+        }
+        
+        #container1 p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: medium;
+        }
+        
+        #container2 {
+            position: absolute;
+            left: 1000px;
+            top: 300px;
+            background-color: cyan;
+            border: 2px solid #ff4994;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        footer {
+            display: block;
+            text-align: center;
+            position: absolute;
+            font-size: 35px;
+            bottom: 10px;
+            padding: 5px;
+            left: 550px;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="blood1.jpg" style="float: left;">
+    <img src="blood1.jpg" style="float: right;">
+    <div class="container">
+        <h1>Blood Bank Management System</h1>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="container1">
+        <h1 style="text-align: center;">About Blood Bank</h1>
+        <p>
+            A blood bank is a center where blood gathered as a result of blood donation is stored and preserved for later use in blood transfusion. The term "blood bank" typically refers to a division of a hospital where the storage of blood product occurs and where
+            proper testing is performed (to reduce the risk of transfusion related adverse events). However, it sometimes refers to a collection center, and indeed some hospitals also perform collection. Routine blood storage is 42 days or 6 weeks for
+            stored packed red blood cells (also called "StRBC" or "pRBC"), by far the most commonly transfused blood product, and involves refrigeration but usually not freezing. There has been increasing controversy about whether a given product unit's
+            age is a factor in transfusion efficacy, specifically on whether "older" blood directly or indirectly increases risks of complications.Studies have not been consistent on answering this question,with some showing that older blood is indeed
+            less effective but with others showing no such difference; nevertheless, as storage time remains the only available way to estimate quality status or loss, a first-in-first-out inventory management approach is standard presently. It is also
+            important to consider that there is large variability in storage results for different donors, which combined with limited available quality testing, poses challenges to clinicians and regulators seeking reliable indicators of quality for
+            blood products and storage systems.Transfusions of platelets are comparatively far less numerous, but they present unique storage/management issues. Platelets may only be stored for 7 days,due largely to their greater potential for contamination,
+            which is in turn due largely to a higher storage temperature.
+        </p>
+    </div>
+    <div id="container2">
+        <h1>Project Features</h1>
+        <h2>User Login</h2>
+        <h2>Donor Registration</h2>
+        <h2>Blood management</h2>
+        <h2>Contact and about the project</h2>
+    </div>
+    <footer><span>*</span> Donate Blood Save Lives<span>*</span></footer>
+</body>
+
+</html>
